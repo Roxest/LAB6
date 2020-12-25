@@ -34,10 +34,8 @@ int main(){
     cout << "Fahsai: I think you are an Engineering student. What is your student ID?\n";
     p1chat(username);
     cin >> id;
-    int gear = (id/10000000)-12;
     cin.ignore();
-    cout << "Fahsai: I think you may be GEAR "<< gear  <<". I have a free movie ticket for you.\n";
-
+    cout << "Fahsai: I think you may be GEAR "<< (id/10000000)-12  <<". I have a free movie ticket for you.\n";
     cout << "Fahsai: Let's go to the cinema together!!!\n";
     cout << "Fahsai: What movie do you want to watch?\n";
     p1chat(username);
@@ -47,10 +45,10 @@ int main(){
     p1chat(username);
     getline(cin,dapp);
 
-    cout << "Fahsai:"<< dapp <<"....that is OK!!! I'm looking forward to watching "<< movie <<" with you.\n";
+    cout << "Fahsai: "<< dapp <<"....that is OK!!! I'm looking forward to watching "<< movie <<" with you.\n";
     p1chat(username);
     getline(cin,ans);
 
-    cout << "Fahsai: 555+ see you "<< dapp <<". Bye Bye \(^ ^)/";
+    cout << "Fahsai: 555+ see you "<< dapp <<". Bye Bye \\(^ ^)/";
     return 0;
 }
